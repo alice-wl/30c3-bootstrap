@@ -100,6 +100,17 @@ module.exports = function(grunt) {
         },
         src: ['less/theme.less'],
         dest: 'dist/css/<%= pkg.name %>-theme.min.css'
+      },
+      fahrplan: {
+        src: ['less/fahrplan.less'],
+        dest: 'dist/css/<%= pkg.name %>-fahrplan.css'
+      },
+      fahrplan_min: {
+        options: {
+          compress: true
+        },
+        src: ['less/fahrplan.less'],
+        dest: 'dist/css/<%= pkg.name %>-fahrplan.min.css'
       }
     },
 
