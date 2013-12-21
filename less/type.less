@@ -80,7 +80,6 @@ h1, h2, h3, h4, h5, h6,
   font-family: @headings-font-family;
   font-weight: @headings-font-weight;
   line-height: @headings-line-height;
-  color: @headings-color;
 
   small,
   .small {
@@ -90,11 +89,16 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+h2, .h2 {
+  font-family: @font-family-specialthin;
+}
+
 h1,
 h2,
 h3 {
   margin-top: @line-height-computed;
   margin-bottom: (@line-height-computed / 2);
+  color: @headings-color;
 
   small,
   .small {
